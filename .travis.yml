@@ -1,9 +1,11 @@
 language: node_js
 node_js:
-- '12'
+  - "12"
 script:
-- npm test
-- npm run build
+  - npm test
+  - npm run build
 deploy:
+  provider: heroku
+  app: vishnu-travis-heroku-test
   api_key:
     secure: w2tW/x4i9avxbX9xn60q0WHgV+0IPbPhmRE06YuAHav/aHnOJrpknnSrX8pWx9m1b/EBPAscDduJLEQTQFknLZxRpvtvbmN0off2+cUTflOcTHVFiN1hQXTBd9Eq5fHjF959ZKmeZ9ZItT8wI8FUUQGJYHTQiEHmcqFn12TfTpjyoOybYRzq/puHa4djMGenSTMrqA+H12jwAoPKzw//l56NnSmI15IjCVzVh8iJ9Qr8X/9XPFIse6JIY1qzFirtWwawdBNQpqVeLovo23OrolwGJXZ8F/hx0GdmWgaAdQ9ed4xoSrtPfjPFsnlq51BVIg10bExoTBcq/JFE3Up4hfY07QwZ/9TVq0mH5moBxjUx7gEAJVVm9Y1/zNsaMOUf5VBTUwTQATMD01wraLoLnVJHb0RWAEHl//nLQUuniE1GWD6ne5c6ZxrNZEjoQnpd8m9ASbK4TVcKjdF8cBWyMpy3ahBjnGFopeQE241PltzVbU+T59zTHcs2/xsvs43gVjTVC+NRe2dLdl7gHWBWbPkZ/GrT9G3CaATbodRPa/YCBRqoBwAB+hlvxsCyOtKWTBw2k/Pel5tspbFyAYzEXbdp7OHai3nvsSRu5i4Tx6yfUWTqLDm21wZCMQ1ICfGQ+EwxPAyrwG9mBKEinaG9VkiFcvbpi0vGIj8QmTvYJWw=
